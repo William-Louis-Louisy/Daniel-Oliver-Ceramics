@@ -1,4 +1,4 @@
-# Next.js 15.2 Fullstack Template 🚀
+# Next.js Fullstack Template 🚀
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.2-blue?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)](https://www.typescriptlang.org/)
@@ -14,7 +14,7 @@
 
 ## Table of Contents
 
-- [Next.js 15.2 Fullstack Template 🚀](#nextjs-152-fullstack-template-)
+- [Next.js Fullstack Template 🚀](#nextjs-16-fullstack-template-)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Features](#features)
@@ -30,7 +30,7 @@
 
 ## Overview
 
-Welcome to the **Next.js 15.2 Fullstack Template**! This template is built with modern best practices and a passion for clean, maintainable code. It is designed to get you started quickly with a powerful fullstack setup including:
+Welcome to the **Next.js Fullstack Template**! This template is built with modern best practices and a passion for clean, maintainable code. It is designed to get you started quickly with a powerful fullstack setup including:
 
 - **TypeScript** for robust, type-safe code.
 - **Next.js App Router** for advanced routing and API capabilities.
@@ -44,7 +44,7 @@ Welcome to the **Next.js 15.2 Fullstack Template**! This template is built with 
 
 ## Features
 
-- **Next.js 15.2 & App Router**  
+- **Next.js & App Router**  
   Utilize the latest Next.js features with a segment-based routing system and serverless API routes.
 
 - **TypeScript**  
@@ -139,7 +139,7 @@ NEXTAUTH_SECRET=your_nextauth_secret
 
 ## Configuration
 
-**Next.js 15.2:** Uses the new App Router for a clear separation of server and client code.
+**Next.js:** Uses the new App Router for a clear separation of server and client code.
 
 **TypeScript:** Enforces type safety and compile-time error checking for a robust codebase.
 
