@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { useRouter } from 'next/navigation';
 import Loader from '@/components/commons/Loader';
-import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
 import LoginScreen from '@/components/admin/LoginScreen';
+import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
 
 export default function AdminPage() {
   const { user, isLoading } = useAuth(false);

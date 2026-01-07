@@ -1,16 +1,16 @@
 'use client';
-import Loader from '@/components/commons/Loader';
-import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
-import GalleriesList from '@/components/lists/GalleriesList';
-import ConfirmModal from '@/components/modals/ConfirmModal';
-import GalleryFormModal from '@/components/modals/GalleryFormModal';
-import { useAuth } from '@/hooks/useAuth';
-import { useAdminGalleries, useDeleteGallery } from '@/hooks/useGalleries';
-import { Gallery } from '@/lib/api/galleries';
-import { adminSections } from '@/lib/adminSections';
-import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
+import { useAuth } from '@/hooks/useAuth';
+import { Gallery } from '@/lib/api/galleries';
+import Loader from '@/components/commons/Loader';
+import React, { useEffect, useState } from 'react';
+import { adminSections } from '@/lib/adminSections';
+import ConfirmModal from '@/components/modals/ConfirmModal';
+import GalleriesList from '@/components/lists/GalleriesList';
+import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
 import AdminPageHeading from '@/components/admin/AdminPageHeading';
+import GalleryFormModal from '@/components/modals/GalleryFormModal';
+import { useAdminGalleries, useDeleteGallery } from '@/hooks/useGalleries';
 
 export default function ManageGalleries() {
   const { user, isLoading: authLoading, error: authError } = useAuth(true);

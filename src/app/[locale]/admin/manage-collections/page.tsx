@@ -1,5 +1,4 @@
 'use client';
-import { useAdminArtCollections, useDeleteArtCollection } from '@/hooks/useArtCollections';
 import toast from 'react-hot-toast';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState } from 'react';
@@ -11,6 +10,7 @@ import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
 import AdminPageHeading from '@/components/admin/AdminPageHeading';
 import ArtCollectionsList from '@/components/lists/ArtCollectionsList';
 import ArtCollectionModal from '@/components/modals/ArtCollectionModal';
+import { useAdminArtCollections, useDeleteArtCollection } from '@/hooks/useArtCollections';
 
 export default function ManageCollections() {
   const { user, isLoading: authLoading, error: authError } = useAuth(true);

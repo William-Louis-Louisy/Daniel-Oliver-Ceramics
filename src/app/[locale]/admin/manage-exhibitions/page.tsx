@@ -1,18 +1,16 @@
 'use client';
-import { useAdminExhibitions, useDeleteExhibition } from '@/hooks/useExhibitions';
 import toast from 'react-hot-toast';
 import { useAuth } from '@/hooks/useAuth';
 import { useEffect, useState } from 'react';
 import Loader from '@/components/commons/Loader';
 import { Exhibition } from '@/lib/api/exhibitions';
-import AdminHeader from '@/components/admin/AdminHeader';
 import { adminSections } from '@/lib/adminSections';
-import SectionHeading from '@/components/admin/SectionHeading';
+import ConfirmModal from '@/components/modals/ConfirmModal';
 import ExhibitionsList from '@/components/lists/ExhibitionsList';
 import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
-import ExhibitionFormModal from '@/components/modals/ExhibitionFormModal';
-import ConfirmModal from '@/components/modals/ConfirmModal';
 import AdminPageHeading from '@/components/admin/AdminPageHeading';
+import ExhibitionFormModal from '@/components/modals/ExhibitionFormModal';
+import { useAdminExhibitions, useDeleteExhibition } from '@/hooks/useExhibitions';
 
 export default function ManageExhibitions() {
   const { user, isLoading: authLoading, error: authError } = useAuth(true);

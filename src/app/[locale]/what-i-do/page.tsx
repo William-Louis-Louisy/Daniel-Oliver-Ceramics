@@ -2,10 +2,10 @@
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { motion } from 'motion/react';
+import { cards } from '@/lib/motionVariants';
 import Loader from '@/components/commons/Loader';
 import CategoryCard from '@/components/commons/CategoryCard';
 import { usePublishedArtCollections } from '@/hooks/useArtCollections';
-import { cards } from '@/lib/motionVariants';
 
 export default function WhatIDoPage() {
   const { data, isLoading, error } = usePublishedArtCollections();
