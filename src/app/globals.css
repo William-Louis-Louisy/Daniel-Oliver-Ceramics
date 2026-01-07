@@ -1,39 +1,31 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-alternative: var(--alternative);
   --color-element: var(--element);
+  --color-accent: var(--accent);
+  --color-drk-accent: var(--drk-accent);
+  --color-complementary: var(--complementary);
   --color-moon: var(--moon);
   --color-sun: var(--sun);
   --spacing-header: var(--header-h);
   --spacing-page: var(--page-min-h);
+  --font-inter: var(--font-inter);
+  --font-hanken-grotesk: var(--font-hanken-grotesk);
 }
 
 :root {
-  --background: oklch(94.61% 0 0);
+  --background: oklch(0.7641 0.0304 57.24);
   --foreground: oklch(14.48% 0 0);
-  --alternative: oklch(34.48% 0 0);
-  --element: oklch(84.52% 0 0);
+  --alternative: oklch(0.5105 0.0668 55.61);
+  --element: oklch(0.9055 0.0111 54.49);
+  --accent: oklch(0.4983 0.0413 202.52);
+  --drk-accent: oklch(0.3803 0.0413 202.52);
+  --complementary: oklch(0.4447 0.0499 24.55);
   --header-h: 4rem;
   --page-min-h: calc(100dvh - var(--header-h));
-}
-
-html[data-theme="dark"] {
-  --background: oklch(14.48% 0 0);
-  --foreground: oklch(94.61% 0 0);
-  --alternative: oklch(74.61% 0 0);
-  --element: oklch(24.78% 0 0);
-
-  color-scheme: dark;
-}
-
-html[data-theme="light"] {
-  --background: oklch(94.61% 0 0);
-  --foreground: oklch(14.48% 0 0);
-  --alternative: oklch(34.48% 0 0);
-  --element: oklch(84.52% 0 0);
 }
 
 @layer base {
@@ -53,7 +45,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-hanken-grotesk);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -63,5 +55,49 @@ a {
 }
 
 h1 {
-  @apply text-4xl font-bold tracking-tight sm:text-6xl;
+  @apply font-bold uppercase;
+}
+
+.edit-button {
+  @apply cursor-pointer rounded-md border border-blue-600 bg-blue-300/40 px-2 text-blue-600 hover:text-blue-900;
+}
+.delete-button {
+  @apply cursor-pointer rounded-md border border-red-600 bg-red-300/40 px-2 text-red-600 hover:text-red-900;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+}
+
+/* Input base styles */
+input,
+textarea,
+select {
+  background-color: var(--element);
+  color: var(--foreground);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--element) inset;
+  -webkit-text-fill-color: var(--foreground);
+
+  transition: background-color 9999s ease-out 0s;
 }

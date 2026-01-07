@@ -1,0 +1,73 @@
+{
+  "AdminPage": {
+    "title": "Página de administración",
+    "description": "Si ves esta página, has iniciado sesión como administrador."
+  },
+  "ContactPage": {
+    "title": "Gracias por tu visita.",
+    "description": "Puedes enviarme un mensaje y suscribirte a mi lista de correo.",
+    "firstname": "Nombre",
+    "lastname": "Apellidos",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Tu mensaje",
+    "max": "Máximo 2000 caracteres",
+    "send": "Enviar mensaje",
+    "successToast": "Tu mensaje ha sido enviado con éxito.",
+    "errorToast": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
+  },
+  "ExhibitionsPage": {
+    "galleries": "Galerías",
+    "artFestival": "Festival de arte, mercado de creadores"
+  },
+  "HomePage": {
+    "title": "Bienvenidos",
+    "description": "Cerámicas hechas a mano que invitan a tu imaginación a jugar.",
+    "intro": "Trabajo con arcilla desde hace ya un tiempo y me doy cuenta de que una de las razones por las que sigo haciéndolo es que me tranquiliza. Me lleva a un lugar mágico donde lo único que necesitas llevar contigo es tu imaginación.",
+    "technique": "Para mi trabajo utilizo la técnica de modelado a mano. Me da la libertad que necesito para crear mis piezas. Empiezo con una plancha o una pieza de arcilla extruida, añado texturas en la superficie y luego doy forma a las piezas hasta que me siento satisfecho con lo que veo.",
+    "firing": "Las piezas terminadas se cuecen en horno Raku o a media temperatura. Aplico los esmaltes con pincel, estampado o trazos fluidos.",
+    "goddesses": "Después, todo depende de que las Diosas sean amables y me ayuden durante el proceso de cocción.",
+    "fun": "Al final, se trata simplemente de pasarlo bien y espero que el carácter lúdico de mi trabajo lo demuestre.",
+    "unique": "Todas mis piezas son únicas.",
+    "signature": "Daniel Oliver",
+    "moreAboutMe": "Más sobre mí",
+    "whatIDo": "Lo que hago"
+  },
+  "Header": {
+    "hello": "Hola",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "openUserMenu": "Abrir menú de usuario",
+    "openMainMenu": "Abrir menú principal",
+    "navigation": {
+      "home": "Inicio",
+      "whatIDo": "Lo que hago",
+      "contact": "Contacto",
+      "exhibitions": "Exposiciones"
+    }
+  },
+  "LocaleSwitch": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, fr {français} en {english} es {español} zh {中文} ja {日本語} ko {한국어} other {Unknown}}"
+  },
+  "ThemeToggle": {
+    "label": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "WhatIdo": {
+    "title": "Lo que hago",
+    "potBelly": {
+      "title": "Serie de cajas Pot Belly",
+      "description": "Empecé mi serie de Pot Belly Boxes porque quería crear contenedores que se sintieran corporales: cálidos, un poco torpes y, sin duda, muy presentes. La “barriga” redondeada se convirtió en la protagonista: un volumen suave que contrasta con la tapa nítida y las pequeñas patas, como un diminuto mueble con actitud. Las construyo a mano y trato las superficies como capas de ropa y cicatrices: engobes, manchas, incisiones y dibujos que recuerdan a telas, mapas o grafitis. Los remates son asas juguetonas —cuernos, crecientes, espirales—, pequeños tótems que hacen que cada caja parezca viva. Están hechas para guardar tesoros cotidianos, secretos y pequeños rituales."
+    },
+    "shield": {
+      "title": "Serie de escudos Xoxox",
+      "description": "La serie Shield nació de un sentimiento de frustración e impotencia cuando a mi esposa le diagnosticaron cáncer y el médico nos contó el peor de los panoramas.\nQuería ser como esos artistas que, cuando llegan las dificultades o los tiempos duros, son capaces de crear y de volcar en sus obras sus sentimientos de desesperación y tristeza.\n\nPara mí, el taller es un lugar feliz y es donde me divierto. En ese momento no sabía qué hacer.\nLo único que podía hacer era abrazar y besar más a mi esposa, protegerla, consolarla y cubrirla con un escudo frente al daño.\n\nEntonces surgió la idea del escudo con los xoxox (besos y abrazos) en mi patrón de diseño (que se ha extendido a toda mi obra). Un artefacto, un amuleto, si se quiere, para mantener a raya la energía negativa.\n\nTambién me gusta pensar que cada vez que ves el escudo te recuerda abrazar y besar a tu familia y a tus amigos.\n\nMe alegra poder decir que mi esposa está bien."
+    },
+    "urn": {
+      "title": "Serie de cajas Urn and Treasure",
+      "description": "Comencé la serie de urnas cuando un cliente habitual me pidió que le hiciera una caja para las cenizas de su madre. La caja debía tener el tamaño o la capacidad de una caja de zapatos. Me gustó esa escala y quise jugar un poco más con ella, haciendo las cajas un poco más grandes y probando con diferentes formas. También las llamo cajas del tesoro."
+    }
+  }
+}

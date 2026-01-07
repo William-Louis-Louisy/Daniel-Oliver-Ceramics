@@ -1,18 +1,25 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { redirect } from "next/navigation";
-import AdminClient from "@/components/AdminClient";
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper";
+'use client';
+import { useEffect } from 'react';
+import { useAuth } from '@/hooks/useAuth';
+import { useRouter } from 'next/navigation';
+import Loader from '@/components/commons/Loader';
+import MaxWidthWrapper from '@/components/commons/MaxWidthWrapper';
+import LoginScreen from '@/components/admin/LoginScreen';
 
-export default async function AdminPage() {
-  const session = await getServerSession(authOptions);
-  if (!session?.user || session.user.role !== "ADMIN") {
-    redirect("/");
-  }
+export default function AdminPage() {
+  const { user, isLoading } = useAuth(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoading && user) router.replace('/admin/dashboard');
+  }, [user, isLoading, router]);
+
+  if (isLoading) return <Loader />;
+  if (user) return <Loader />;
 
   return (
-    <MaxWidthWrapper className="flex flex-col items-center gap-8 mt-16 py-12">
-      <AdminClient />
+    <MaxWidthWrapper className="from-background to-element min-h-page flex flex-col items-center justify-center gap-8 bg-gradient-to-b">
+      <LoginScreen />
     </MaxWidthWrapper>
   );
 }

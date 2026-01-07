@@ -1,26 +1,73 @@
 {
   "AdminPage": {
-    "title": "Page Administrateur",
-    "description": "Si vous voyez cette page, vous êtes connecté en tant qu'administrateur."
+    "title": "Page d’administration",
+    "description": "Si vous voyez cette page, vous êtes connecté en tant qu’administrateur."
+  },
+  "ContactPage": {
+    "title": "Merci de votre visite.",
+    "description": "Vous pouvez m’envoyer un message et vous inscrire à ma liste de diffusion.",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "email": "E-mail",
+    "subject": "Sujet",
+    "message": "Votre message",
+    "max": "2000 caractères maximum",
+    "send": "Envoyer le message",
+    "successToast": "Votre message a été envoyé avec succès.",
+    "errorToast": "Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer plus tard."
+  },
+  "ExhibitionsPage": {
+    "galleries": "Galeries",
+    "artFestival": "Festival d’art, marché de créateurs"
   },
   "HomePage": {
-    "title": "Next.js Craft Template",
-    "description": "Un template pour les projets Next.js qui incluent Next-Auth, Next-Intl et TailwindCSS."
+    "title": "Bienvenue",
+    "description": "Céramiques faites main qui invitent votre imagination à jouer.",
+    "intro": "Je travaille l’argile depuis un certain temps maintenant et je réalise que si je continue, c’est parce que cela m’apaise. Elle m’emmène dans un endroit magique où la seule chose à emporter avec soi est son imagination.",
+    "technique": "J’utilise pour mon travail la technique du modelage à la main. Elle me donne la liberté dont j’ai besoin pour créer mes pièces. Je commence par une plaque ou une pièce d’argile extrudée, j’ajoute des textures à la surface puis je façonne mes formes jusqu’à ce que le résultat me satisfasse.",
+    "firing": "Je cuis ensuite mes pièces soit en Raku, soit à moyenne température. J’applique mes émaux au pinceau, au tampon ou en les faisant couler.",
+    "goddesses": "Vient ensuite le moment où je m’en remets aux Déesses pour qu’elles soient bienveillantes et m’aident pendant la cuisson.",
+    "fun": "Au fond, il s’agit surtout de passer un bon moment et j’espère que le côté ludique de mon travail le fait ressentir.",
+    "unique": "Toutes mes pièces sont des pièces uniques.",
+    "signature": "Daniel Oliver",
+    "moreAboutMe": "À propos de moi",
+    "whatIDo": "Ce que je fais"
   },
   "Header": {
     "hello": "Bonjour",
-    "logout": "Déconnexion",
+    "logout": "Se déconnecter",
     "login": "Se connecter",
     "openUserMenu": "Ouvrir le menu utilisateur",
-    "openMainMenu": "Ouvrir le menu principal"
+    "openMainMenu": "Ouvrir le menu principal",
+    "navigation": {
+      "home": "Accueil",
+      "whatIDo": "Ce que je fais",
+      "contact": "Contact",
+      "exhibitions": "Expositions"
+    }
   },
   "LocaleSwitch": {
-    "label": "Changer la langue",
-    "locale": "{locale, select, fr {🇫🇷} en {🇺🇸} other {Inconnu}}"
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {français} en {english} es {español} zh {中文} ja {日本語} ko {한국어} other {Unknown}}"
   },
   "ThemeToggle": {
-    "label": "Changer le thème",
-    "light": "Lumineux",
+    "label": "Changer de thème",
+    "light": "Clair",
     "dark": "Sombre"
+  },
+  "WhatIdo": {
+    "title": "Ce que je fais",
+    "potBelly": {
+      "title": "Série de boîtes Pot Belly",
+      "description": "J’ai commencé ma série de Pot Belly Boxes parce que je voulais créer des contenants qui aient quelque chose de corporel : chaleureux, un peu maladroits et indéniablement présents. Le “ventre” arrondi en est devenu le personnage principal : un volume doux qui contraste avec le couvercle net et les petits pieds, comme un minuscule meuble avec du caractère. Je les construis à la main et je traite les surfaces comme des couches de vêtements et de cicatrices : engobes, taches, gravures et motifs dessinés qui évoquent des textiles, des cartes ou des graffitis. Les prises sont des poignées ludiques — cornes, croissants, spirales — de petits totems qui donnent à chaque boîte l’impression d’être vivante. Elles sont faites pour accueillir les trésors du quotidien, les secrets et les petits rituels."
+    },
+    "shield": {
+      "title": "Série de boucliers Xoxox",
+      "description": "La série Shield est née d’un sentiment de frustration et d’impuissance lorsque ma femme a été diagnostiquée d’un cancer et que le médecin nous a exposé le pire des scénarios.\nJe voulais être comme ces artistes qui, lorsque l’épreuve ou les temps difficiles arrivent, parviennent à créer et à mettre dans leurs œuvres leurs sentiments de désespoir et de tristesse.\n\nPour moi, l’atelier est un endroit joyeux, c’est là que je m’amuse. Je ne savais pas quoi faire.\nLa seule chose que je pouvais faire était de tenir ma femme dans mes bras, de la serrer, de l’embrasser davantage, de la protéger, de la réconforter, de la mettre à l’abri du mal.\n\nAlors m’est venue l’idée du bouclier avec les xoxox (baisers et câlins) intégrés à mon motif (qui s’est désormais répandu dans tout mon travail). Un artefact, un talisman si vous voulez, pour tenir à distance les énergies négatives.\n\nJ’aime aussi penser qu’à chaque fois que vous voyez ce bouclier, il vous rappelle de serrer dans vos bras et d’embrasser votre famille, vos amis.\n\nJe suis heureux d’ajouter que ma femme va bien."
+    },
+    "urn": {
+      "title": "Série de boîtes Urn and Treasure",
+      "description": "J’ai commencé la série des urnes lorsqu’un client fidèle m’a demandé de lui fabriquer une boîte pour les cendres de sa mère. La boîte devait avoir la taille, ou la capacité, d’une boîte à chaussures. J’ai aimé cette échelle et j’ai eu envie de continuer à jouer avec, en les faisant un peu plus grandes et en explorant différentes formes. Je les appelle aussi des boîtes à trésors."
+    }
   }
 }

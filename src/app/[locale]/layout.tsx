@@ -1,14 +1,24 @@
-import "@/app/globals.css";
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { routing } from "../../i18n/routing";
-import { hasLocale } from "next-intl";
-import Providers from "../providers";
+import '@/app/globals.css';
+import type { Metadata } from 'next';
+import Providers from '../providers';
+import { hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '../../i18n/routing';
+import { Inter, Hanken_Grotesk } from 'next/font/google';
+import MainShell from '@/components/commons/MainShell';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+const hankenGrotesk = Hanken_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-hanken-grotesk',
+});
 
 export const metadata: Metadata = {
-  title: "Next.js Craft Template",
-  description:
-    "A template for Next.js projects that include Next-Auth, Next-Intl and TailwindCSS",
+  title: 'Daniel Oliver Ceramics',
+  description: 'Hand-built ceramics that invite you to play with your imagination.',
 };
 
 export default async function LocaleLayout({
@@ -33,9 +43,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body>
+      <body className={`antialiased ${inter.variable} ${hankenGrotesk.variable}`}>
         <Providers locale={locale} messages={messages}>
-          {children}
+          <MainShell>{children}</MainShell>
         </Providers>
       </body>
     </html>

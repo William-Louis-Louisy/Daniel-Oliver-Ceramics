@@ -1,9 +1,30 @@
-import { NextConfig } from "next";
-import createNextIntlPlugin from "next-intl/plugin";
+import { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [{ hostname: "lh3.googleusercontent.com" }],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.ucarecd.net',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.ucarecdn.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ucarecdn.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 

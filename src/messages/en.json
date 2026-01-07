@@ -3,24 +3,71 @@
     "title": "Admin Page",
     "description": "If you see this page, you are logged in as an admin."
   },
+  "ContactPage": {
+    "title": "Thank you for visiting.",
+    "description": "You can send me a message and sign up for my mailing list.",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Your message",
+    "max": "Max 2000 characters",
+    "send": "Send Message",
+    "successToast": "Your message has been sent successfully.",
+    "errorToast": "There was an error sending your message. Please try again later."
+  },
+  "ExhibitionsPage": {
+    "galleries": "Galleries",
+    "artFestival": "Art festival, Makers market"
+  },
   "HomePage": {
-    "title": "Next.js Craft Template",
-    "description": "A template for Next.js projects that include Next-Auth, Next-Intl and TailwindCSS"
+    "title": "Welcome",
+    "description": "Hand-built ceramics that invite you to play with your imagination.",
+    "intro": "I’ve been working with clay for a while now and I am realizing that one of the reasons that I am still doing it is that it puts me at ease. It takes me to a magical place where the only thing you need to bring with you is your imagination.",
+    "technique": "I use the hand building technique for my work. It gives me the freedom that I want to create my pieces. I begin with a slab or extruded piece of clay, add textures on the surface then shape my forms until I am pleased with what I see.",
+    "firing": "I either Raku fire or mid range fire the final work. I brush, stamp or trail glaze my designs.",
+    "goddesses": "Then it is up to the Goddesses to be kind and help me in the firing process.",
+    "fun": "At the end, it is all about having a good time and I hope that the whimsical feel of my work show that.",
+    "unique": "All of my pieces are one of a kind.",
+    "signature": "Daniel Oliver",
+    "moreAboutMe": "More about me",
+    "whatIDo": "What I Do"
   },
   "Header": {
     "hello": "Hello",
     "logout": "Logout",
     "login": "Login",
     "openUserMenu": "Open user menu",
-    "openMainMenu": "Open main menu"
+    "openMainMenu": "Open main menu",
+    "navigation": {
+      "home": "Home",
+      "whatIDo": "What I Do",
+      "contact": "Contact",
+      "exhibitions": "Exhibitions"
+    }
   },
   "LocaleSwitch": {
     "label": "Change language",
-    "locale": "{locale, select, fr {🇫🇷} en {🇺🇸} other {Unknown}}"
+    "locale": "{locale, select, fr {français} en {english} es {español} zh {中文} ja {日本語} ko {한국어} other {Unknown}}"
   },
   "ThemeToggle": {
     "label": "Toggle theme",
     "light": "Light",
     "dark": "Dark"
+  },
+  "WhatIdo": {
+    "title": "What I Do",
+    "potBelly": {
+      "title": "Pot Belly boxes series",
+      "description": "I started my Pot Belly Boxes series because I wanted to make containers that feel bodily—warm, a little awkward, and undeniably present. The rounded “belly” became the main character: a soft volume that contrasts with the crisp lid and the little feet, like a tiny piece of furniture with attitude. I build them by hand and treat the surfaces like layers of clothing and scars—slips, stains, carving, and drawn patterns that hint at textiles, maps, or graffiti. The finials are playful handles—horns, crescents, spirals—small totems that make each box feel alive. They’re made to hold everyday treasures, secrets, and small rituals."
+    },
+    "shield": {
+      "title": "Xoxox Shield series",
+      "description": "The Shield Series came as a frustrated and powerless feeling when my wife was diagnosed with cancer and having been told the worse case scenario by the doctor.\nI wanted to be like those artists who when hardship or hard times comes are able to create, putting their feelings of despair, sadness into their works.\n\nTo me the studio is a happy place and it is where I have fun. I could not think of what to do.\nThe only thing I could do was to hold, hug and kiss my wife more, to protect her, to comfort her, to shield her from harm.\n\nThe idea came then, of the shield with the xoxox (kisses and hugs) in my design pattern (which has crossed over into all of my work). An artifact, an amulet if you wish to fence off negative energy.\n\nAlso, I would like to think, that each time you see the shield, that it would remind you to hug, kiss your family, your friends.\n\nI am glad to add that my wife is fine."
+    },
+    "urn": {
+      "title": "Urn and Treasure boxes series",
+      "description": "I started the urn series after a returning customer asked me to make him a box for his mother's ashes. The box had to be the size or holding capacity of a shoe box. I liked the scale of it and wanted to play a little more with it making them a little bigger and playing with different shapes. I also call them treasure box."
+    }
   }
 }
