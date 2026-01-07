@@ -2,9 +2,9 @@
 import toast from 'react-hot-toast';
 import AdminModal from '../admin/AdminModal';
 import { ModalMode } from '@/types/modalMode';
+import ArtCollectionForm from '../forms/ArtCollectionForm';
 import { ArtCollectionFormValues } from '@/lib/validators/zodArtCollection';
 import { useCreateArtCollection, useUpdateArtCollection } from '@/hooks/useArtCollections';
-import ArtCollectionForm from '../forms/ArtCollectionForm';
 
 interface ArtCollectionModalProps {
   open: boolean;

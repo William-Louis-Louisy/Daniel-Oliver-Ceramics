@@ -36,7 +36,6 @@ export default function ArtCollectionForm({
       title: '',
       image: '',
       description: '',
-      artworks: [],
       isPublished: initialValues?.isPublished ?? true,
       ...initialValues,
     },
@@ -54,7 +53,6 @@ export default function ArtCollectionForm({
       title: initialValues?.title ?? '',
       image: initialValues?.image ?? '',
       description: initialValues?.description ?? '',
-      artworks: initialValues?.artworks ?? [],
       isPublished: initialValues?.isPublished ?? true,
     });
   }, [initialValues, reset]);
