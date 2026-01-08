@@ -34,6 +34,7 @@ export default function HomePage() {
           autoPlay
           loop
           muted
+          preload="always"
         />
         <div className="absolute inset-0 flex size-full flex-col items-center justify-center bg-black/30">
           <MaxWidthWrapper className="flex size-full flex-col items-center justify-center">
@@ -46,6 +47,7 @@ export default function HomePage() {
               <Image
                 src="/images/logo_wht.png"
                 alt="Daniel Oliver Ceramics"
+                className="select-none"
                 width={840}
                 height={210}
               />
@@ -93,7 +95,7 @@ export default function HomePage() {
               alt="Daniel Oliver working on a ceramic piece in his studio"
               width={640}
               height={640}
-              className="h-auto w-full rounded-2xl border border-black/10 object-cover shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-transform duration-200 ease-out hover:scale-[1.01] hover:shadow-[0_28px_60px_rgba(0,0,0,0.35)]"
+              className="h-auto w-full rounded-2xl object-cover shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-transform duration-200 ease-out hover:scale-[1.01] hover:shadow-[0_28px_60px_rgba(0,0,0,0.35)]"
               priority
               sizes="(min-width: 1024px) 540px, 100vw"
             />

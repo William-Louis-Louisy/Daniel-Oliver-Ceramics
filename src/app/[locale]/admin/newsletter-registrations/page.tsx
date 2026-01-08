@@ -44,7 +44,9 @@ export default function NewsletterRegistrations() {
         <div className="mt-2 md:flex md:items-center md:justify-between">
           <div className="min-w-0 flex-1">
             <h1 className="text-2xl leading-6 font-semibold">Newsletter Registrations</h1>
-            <p className="text-neutral mt-2 text-sm">Manage your newsletter registrations here.</p>
+            <p className="text-neutral mt-2 text-sm">
+              Here you will find users registered on your mailing list.
+            </p>
           </div>
           <div className="mt-4 grid grid-cols-2 gap-2 md:mt-0 md:ml-4">
             {/* <button

@@ -41,7 +41,7 @@ export default function LocaleSwitch() {
         <div className="relative text-sm">
           <ListboxButton
             aria-busy={isPending}
-            className="bg-element/60 relative w-full cursor-default rounded-full py-2 pr-10 pl-3 text-left shadow-sm ring-0 focus:ring-0 focus:outline-none"
+            className="bg-element/60 relative w-full cursor-pointer rounded-full py-2 pr-10 pl-3 text-left shadow-sm ring-0 focus:ring-0 focus:outline-none"
           >
             <span className="block truncate">{selected.label}</span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -51,7 +51,7 @@ export default function LocaleSwitch() {
           <ListboxOptions
             modal={false}
             className={cn(
-              'bg-element/90 absolute z-10 max-h-60 w-full overflow-auto rounded-md py-1 text-sm shadow-lg focus:outline-none sm:text-sm',
+              'bg-element/90 absolute z-10 max-h-60 w-fit overflow-auto rounded-md py-1 text-sm shadow-lg focus:outline-none sm:text-sm',
               isMobile ? 'bottom-full mb-1' : 'top-full mt-1',
             )}
           >

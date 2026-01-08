@@ -174,7 +174,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={disabled}
-                  className="from-accent to-drk-accent hover:from-drk-accent hover:to-accent rounded-full bg-gradient-to-br px-4 py-2 text-center text-sm font-semibold text-white duration-150 hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="from-accent to-drk-accent hover:from-drk-accent hover:to-accent cursor-pointer rounded-full bg-gradient-to-br px-4 py-2 text-center text-sm font-semibold text-white duration-150 hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {sendMutation.isPending ? `${t('send')}...` : t('send')}
                 </button>

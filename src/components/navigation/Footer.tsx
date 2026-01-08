@@ -1,14 +1,12 @@
 'use client';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
-import { navigationLinks } from '@/lib/navigation';
 import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
 
 const social = [
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/danieloliverceramics',
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -22,33 +20,26 @@ const social = [
 ];
 
 export default function Footer() {
-  const t = useTranslations('Header');
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-element">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          aria-label="Footer"
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
-        >
-          {navigationLinks.map((link) => (
-            <div key={link.tradKey} className="pb-6">
-              <Link href={link.url} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                {t(`navigation.${link.tradKey}`)}
-              </Link>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-8 sm:py-8 lg:px-8">
+        <div className="flex justify-center space-x-10">
           {social.map((item) => (
-            <Link key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <Link
+              key={item.name}
+              href={item.href}
+              className="flex items-center text-gray-500 hover:text-gray-600"
+              target="_blank"
+            >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="h-6 w-6" />
+              <span className="ml-1 text-sm">@danieloliverceramics</span>
             </Link>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-8 text-center text-xs leading-5 text-gray-500">
           {currentYear} Made with ❤️ by{' '}
           <Link
             href="https://williamlouislouisy.com"

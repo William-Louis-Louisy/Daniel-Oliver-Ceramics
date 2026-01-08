@@ -9,7 +9,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Eye, EyeSlash } from '@phosphor-icons/react';
 import { LoginForm, LoginSchema } from '@/lib/zodSchemas';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import Logo from '../commons/Logo';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -37,11 +36,8 @@ export default function LoginScreen() {
   });
   return (
     <div className="md:bg-element/60 flex flex-col justify-center px-8 py-12 md:rounded-xl md:shadow-2xl">
-      <div className="mb-8 hidden items-center justify-center md:flex">
-        <Logo />
-      </div>
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <h2 className="bg-foreground text-element rounded-full px-6 py-2 text-center text-lg leading-9 font-extrabold tracking-tight uppercase">
+        <h2 className="text-center text-lg leading-9 font-extrabold tracking-tight uppercase">
           Sign in to your account
         </h2>
       </div>

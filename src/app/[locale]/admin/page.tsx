@@ -18,8 +18,10 @@ export default function AdminPage() {
   if (user) return <Loader />;
 
   return (
-    <MaxWidthWrapper className="from-background to-element min-h-page flex flex-col items-center justify-center gap-8 bg-gradient-to-b">
-      <LoginScreen />
-    </MaxWidthWrapper>
+    <div className="from-background to-element bg-gradient-to-b">
+      <MaxWidthWrapper className="min-h-page flex flex-col items-center justify-center gap-8">
+        <LoginScreen />
+      </MaxWidthWrapper>
+    </div>
   );
 }
