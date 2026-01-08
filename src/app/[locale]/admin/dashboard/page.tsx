@@ -23,7 +23,7 @@ export default function Dashboard() {
       <div className="relative isolate overflow-hidden px-6 py-16 lg:px-8">
         <Image
           alt=""
-          src="https://43mwixh28o.ucarecd.net/fc2b20bc-a96d-4142-a86b-d77891335299"
+          src="https://43mwixh28o.ucarecd.net/22727014-10b7-4502-8592-70ed2fca73a5/"
           fill
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
