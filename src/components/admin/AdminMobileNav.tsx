@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useAuth } from '@/hooks/useAuth';
+import { DisclosureButton } from '@headlessui/react';
 
 export default function AdminMobileNav() {
   const { user, isLoading, logout, isLoggingOut } = useAuth(false);
@@ -10,24 +11,31 @@ export default function AdminMobileNav() {
 
   return (
     <div className="border-foreground/30 flex flex-col items-center gap-4 border-t pt-6">
-      <Link href="/admin" className="block px-4 py-2 text-sm data-[focus]:text-white">
+      <DisclosureButton
+        as={Link}
+        href="/admin"
+        className="block px-4 py-2 text-sm data-[focus]:text-white"
+      >
         Admin Dashboard
-      </Link>
+      </DisclosureButton>
 
-      <Link
-        href="/newsletter-registrations"
+      <DisclosureButton
+        as={Link}
+        href="/admin/newsletter-registrations"
         className="block px-4 py-2 text-sm data-[focus]:text-white"
       >
         Newsletter Registrations
-      </Link>
+      </DisclosureButton>
 
-      <button
-        className="block px-4 py-2 text-sm data-[focus]:text-white"
+      <DisclosureButton
+        as="button"
+        type="button"
+        className="block cursor-pointer px-4 py-2 text-sm disabled:opacity-50 data-[focus]:text-white"
         onClick={() => logout()}
         disabled={isLoggingOut}
       >
-        <span>Logout</span>
-      </button>
+        Logout
+      </DisclosureButton>
     </div>
   );
 }

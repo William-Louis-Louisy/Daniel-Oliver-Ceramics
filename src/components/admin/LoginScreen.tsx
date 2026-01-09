@@ -36,7 +36,7 @@ export default function LoginScreen() {
   });
   return (
     <div className="md:bg-element/60 flex flex-col justify-center px-8 py-12 md:rounded-xl md:shadow-2xl">
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="text-center text-lg leading-9 font-extrabold tracking-tight uppercase">
           Sign in to your account
         </h2>
@@ -83,7 +83,7 @@ export default function LoginScreen() {
                 autoComplete="current-password"
                 aria-invalid={!!loginErrors.password}
                 aria-describedby={loginErrors.password ? 'login-pwd-err' : undefined}
-                className="border-neutral block w-full rounded-md border py-1.5 pr-20 pl-3 shadow-sm ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="border-neutral block w-full rounded-md border py-1.5 pr-16 pl-3 shadow-sm ring-0 placeholder:text-gray-400 sm:text-sm sm:leading-6"
               />
               <button
                 type="button"
