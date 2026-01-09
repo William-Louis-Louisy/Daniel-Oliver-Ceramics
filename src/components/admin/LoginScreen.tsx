@@ -42,7 +42,7 @@ export default function LoginScreen() {
         </h2>
       </div>
 
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
         <form
           onSubmit={handleLoginSubmit((data) => loginMutation.mutate(data))}
           className="space-y-4"
