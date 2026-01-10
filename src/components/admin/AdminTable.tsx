@@ -65,7 +65,7 @@ export default function AdminTable<T>({
                 ))}
 
                 {hasActions && (
-                  <th scope="col" className="relative py-3.5 pr-4 pl-3 sm:pr-0">
+                  <th scope="col" className="w-32 py-3.5 pr-4 pl-3 text-right sm:pr-0">
                     <span className="sr-only">Actions</span>
                   </th>
                 )}
@@ -92,8 +92,10 @@ export default function AdminTable<T>({
                     ))}
 
                     {hasActions && (
-                      <td className="relative inline-flex items-center gap-2 py-4 pr-4 pl-3 text-right text-sm font-medium whitespace-nowrap sm:pr-0">
-                        {renderActions?.(item) ?? null}
+                      <td className="relative py-4 pr-4 pl-3 text-right text-sm font-medium whitespace-nowrap sm:pr-0">
+                        <div className="flex justify-end gap-2">
+                          {renderActions?.(item) ?? null}
+                        </div>
                         <span className="sr-only">{rowLabel}</span>
                       </td>
                     )}

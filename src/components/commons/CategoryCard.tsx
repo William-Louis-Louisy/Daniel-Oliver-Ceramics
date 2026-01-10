@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { motion } from 'motion/react';
 import { ArrowRight } from '@phosphor-icons/react';
+import { uploadcareLoader } from '@/lib/uploadcareLoader';
 
 interface CategoryCardProps {
   image: string;
@@ -13,6 +14,8 @@ interface CategoryCardProps {
 const MotionLink = motion.create(Link);
 
 export default function CategoryCard({ image, title, href }: CategoryCardProps) {
+  const optimizedImage = uploadcareLoader(image);
+
   return (
     <MotionLink
       href={href}
@@ -23,7 +26,7 @@ export default function CategoryCard({ image, title, href }: CategoryCardProps) 
       <motion.div
         aria-hidden
         className="absolute inset-0 bg-cover bg-center duration-300 will-change-transform"
-        style={{ backgroundImage: `url(${image})`, transformOrigin: 'center' }}
+        style={{ backgroundImage: `url(${optimizedImage})`, transformOrigin: 'center' }}
         variants={{
           rest: { scale: 1.08 },
           hover: { scale: 1 },

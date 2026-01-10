@@ -50,6 +50,7 @@ export default function ContactPage() {
           alt=""
           src="/images/contact-plate.jpg"
           fill
+          priority
           className="h-64 w-full object-cover sm:h-80 lg:absolute lg:h-full"
         />
       </div>
