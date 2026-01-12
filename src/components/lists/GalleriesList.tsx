@@ -51,14 +51,14 @@ export default function GalleriesList({
       getRowId={(item) => item._id}
       getRowLabel={(item) => item.name}
       renderActions={(item) => (
-        <div className="flex gap-2">
+        <>
           <button onClick={() => onEdit(item)} className="edit-button shrink-0">
             Edit<span className="sr-only">, {item.name}</span>
           </button>
-          <button onClick={() => onDelete(item._id)} className="delete-button shrink-0">
+          <button onClick={() => onDelete(item._id)} className="delete-button ml-2 shrink-0">
             Delete<span className="sr-only">, {item.name}</span>
           </button>
-        </div>
+        </>
       )}
     />
   );
