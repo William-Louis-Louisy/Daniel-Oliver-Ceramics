@@ -27,7 +27,7 @@ export default function LoginScreen() {
     onSuccess: async (user) => {
       toast.success(`Welcome ${user.name} !`);
       await qc.invalidateQueries({ queryKey: ['currentUser'] });
-      router.push('/dashboard');
+      router.replace('/admin/dashboard');
     },
     onError: (err) => {
       if (err.status === 401) return toast.error('Invalid credentials');
