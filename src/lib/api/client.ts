@@ -1,5 +1,4 @@
-export const API_URL = process.env.NEXT_PUBLIC_API_URL;
-if (!API_URL) throw new Error('Missing NEXT_PUBLIC_API_URL');
+export const API_URL = '/api/backend';
 
 export type ApiError = Error & { status?: number; details?: unknown };
 
