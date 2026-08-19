@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useForm } from 'react-hook-form';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
 import { ApiError } from '@/lib/api/client';
 import ErrorFeedback from './ErrorFeedback';
 import { AuthUser, login } from '@/lib/api/user';
@@ -24,9 +24,9 @@ export default function LoginScreen() {
 
   const loginMutation = useMutation<AuthUser, ApiError, LoginForm>({
     mutationFn: (data: LoginForm) => login(data),
-    onSuccess: async (user) => {
+    onSuccess: (user) => {
+      qc.setQueryData(['currentUser'], user);
       toast.success(`Welcome ${user.name} !`);
-      await qc.invalidateQueries({ queryKey: ['currentUser'] });
       router.replace('/admin/dashboard');
     },
     onError: (err) => {
@@ -34,6 +34,7 @@ export default function LoginScreen() {
       toast.error(err.message || 'Login failed');
     },
   });
+
   return (
     <div className="md:bg-element/60 flex flex-col justify-center px-8 py-12 md:rounded-xl md:shadow-2xl">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
